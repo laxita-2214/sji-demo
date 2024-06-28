@@ -1,0 +1,266 @@
+*{
+    /* background-color: black; */
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+
+}
+.container{
+    width: 90%;
+    margin-inline: auto;
+}
+.rubik{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box1, .box2, .box3 {
+    flex: 1;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+button{
+    padding: 10px;
+    color: white;
+    background-color: #000000;
+    border: 1px solid white;
+}
+.box3 button{
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white !important;
+    background-color: black !important; 
+}
+.button_div{
+    padding: 10px;
+    display: inline;
+    background-color: rgb(255, 60, 0);
+    border: 0px solid rgb(255, 60, 0);
+}
+.button_div a{
+    background-color:rgb(255, 60, 0) ;
+}
+.nav a {
+    text-decoration: none;
+}
+.box1 img{
+    width: 30%;
+}
+.main {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.left{
+    padding-left: 170px;
+    padding-right: 170px;
+}
+.left h1{
+    font-size: 60px;
+    line-height: 60px;
+    /* padding-left: unset;
+    padding-right: unset; */
+}
+.left p{
+    font-size: 20px;
+}
+.left h1, .left p {
+    text-align: left;
+}
+
+/* .left h1::after {
+    content: "Build Your \A Awesome \A Website";
+    white-space: pre;
+}
+
+.left p::after {
+    content: "Opec studio is a digital studio that offers several services \A such as UI/UX Design to developers, we will provide the best \A service for those of you who use our services.";
+    white-space: pre;
+}
+.lorem_text::after {
+    content: "Lorem ipsum, dolor sit amet \A consectetur adipisicing elit.";
+    white-space: pre;
+}
+.footer_text::after {
+    content: "The Service We Provide \A For You";
+    white-space: pre;
+} */
+.nav-toggle img{
+    width: auto;
+}
+.right img {
+    width: 100%
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer_text {
+    display: inline-block;
+    text-align: center;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.boxes img{
+    width:40%;
+}
+
+.boxes > div {
+    text-align: center;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.footer_box2:hover, .footer_box3:hover, .footer_box1:hover {
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.footer_box1{
+    z-index: 1;
+}
+
+.nav-toggle {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+    }
+    .contact_button{
+        display: none;
+    }
+    
+    .nav a {
+        padding: 10px;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+}
+
+@media (max-width: 450px) {
+    
+    .main {
+        flex-direction: column;
+    }
+    .box1{
+        margin-top: 25px;
+    }
+
+    .boxes {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .box1 img{
+        width: 80%;
+    }
+
+    .footer_text {
+        display: block;
+    }
+
+    .right, .left {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .left h1 {
+        font-size: 50px;
+    }
+
+    .left p {
+        font-size: 16px;
+    }
+}
+
+.menu.items.mobile > a {
+    display: block;
+    background-color: rgb(0, 0, 0);
+    color: rgb(133, 8, 8);
+    text-decoration: none;
+}
+
+.menu {
+    position: fixed;
+    left: 0px;
+    top:0px;
+    text-align: left;
+    padding: 20px;
+    padding-top: 0px;
+    line-height: 4;
+    height:100%;
+    width: 50%;
+    background-color: #000000;
+
+}
+.menulogo img{
+    width: 50%;
+    margin-top: 25px;
+}
+.nav-toggle img{
+    width:50%;
+}
+
+.mobile_navigation{
+    opacity: 0;
+   transition: opacity 1s ease;
+   background-color: #000000;
+  
+   
+}
+
+.mobile_navigation.show{
+    opacity: 1;
+    
+}
+
+body {
+    /* width : 100%;
+    height:100%; */
+    background: radial-gradient(circle, #2f1414, #000000);
+    /* background: linear-gradient(to right, #2f1414, #000000); */
+
+}
