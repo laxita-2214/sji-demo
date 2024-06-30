@@ -1,89 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="Menu.js"></script>
     <title>Document</title>
 </head>
+
 <body>
     <div class="container">
-    <div class="header">
-        <div class="box1">
-            <img src="assets/Logo.png"/>
-        </div>
-        <div class="box2">
-            <div class="mobile_navigation rubik">
-                
-                <div class="menu items mobile">
-                    <div class="menulogo">
-                        <img src="assets/Logo.png"/>
+        <div class="header">
+            <div class="box1">
+                <img src="assets/Logo.png" />
+            </div>
+            <div class="box2">
+                <div class="mobile_navigation rubik">
+
+                    <div class="menu items mobile">
+                        <div class="menulogo">
+                            <img src="assets/Logo.png" />
+                        </div>
+                        <a href="#">Home</a>
+                        <a href="#">Services</a>
+                        <a href="#">Our Projects</a>
+                        <a href="#">About us</a>
+                        <div><button>Contact us</button></div>
                     </div>
+                </div>
+                <div class="nav">
                     <a href="#">Home</a>
                     <a href="#">Services</a>
                     <a href="#">Our Projects</a>
                     <a href="#">About us</a>
-                    <div><button >Contact us</button></div>
                 </div>
             </div>
-            <div class="nav">
-                <a href="#">Home</a>
-                <a href="#">Services</a>
-                <a href="#">Our Projects</a>
-                <a href="#">About us</a>
+            <div class="box3"><button class="contact_button" onclick="scrollToContact()" >Contact us</button></div>
+
+            <button class="nav-toggle" id="nav-toggle" onclick="menu()">
+                <img src="assets/Menu icon.png" />
+            </button>
+        </div>
+
+        <div class="main">
+            <div class="left">
+                <div>
+                    <h1>Build Your Awesome Website</h1>
+                </div>
+                <div>
+                    <p class="rubik">Opec studio is a digital studio that offers several services such as UI/UX Design
+                        to developers, we will provide the best service for those of you who use our services."</p>
+                </div>
+                <div class="button_div">
+                    <a>Our Services</a>
+                </div>
+            </div>
+            <div class="right">
+                <img src="assets/Girl image.png" />
             </div>
         </div>
-        <div class="box3"><button class="contact_button">Contact us</button></div>
 
-        <button class="nav-toggle" id="nav-toggle" onclick="menu()">
-            <img src="assets/Menu icon.png"/>
-        </button>
+        <div class="footer">
+            <h1 class="footer_text">The Service We Provide For You</h1>
+            <div class="boxes">
+                <div class="footer_box1">
+                    <img src="assets/Icon 1.png">
+                    <h3>UI/UX Design</h3>
+                    <p class="lorem_text">Lorem ipsum, dolor sit amet \A consectetur adipisicing elit.</p>
+                </div>
+                <div class="footer_box2">
+                    <img src="assets/Icon 2.png">
+                    <h3>Graphic Design</h3>
+                    <p class="lorem_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="footer_box3">
+                    <img src="assets/Icon 3.png">
+                    <h3>Motion Design</h3>
+                    <p class="lorem_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="main">
-        <div class="left">
+    <div class="contact-section" id="contact">
+        <img src="assets/Logo.png"/>
+            <div class="contact-left">
             <div>
-                <h1>Build Your Awesome Website</h1>
+                <h3>Our Address</h3>
+                <p>246 4th Avenue<br>New York, NY 10001<br>United States</p>
             </div>
             <div>
-                <p class="rubik">Opec studio is a digital studio that offers several services such as UI/UX Design to developers, we will provide the best service for those of you who use our services."</p>
+                <h3>Our Contacts</h3>
+                <p>Email: info@opec.com<br>Phone: 548-548-8589</p>
             </div>
-            <div class="button_div">
-                <a>Our Services</a>
-            </div> 
         </div>
-        <div class="right" >
-            <img src="assets/Girl image.png"/>
-        </div>
-    </div>
+        <div class="contact-right">
+            
+            <h1>Contact Us</h1>
 
-    <div class="footer">
-        <h1 class="footer_text">The Service We Provide For You</h1>
-        <div class="boxes">
-            <div class="footer_box1">
-                <img src="assets/Icon 1.png">
-                <h3>UI/UX Design</h3>
-                <p class="lorem_text">Lorem ipsum, dolor sit amet \A consectetur adipisicing elit.</p>
-            </div>
-            <div class="footer_box2">
-                <img src="assets/Icon 2.png">
-                <h3>Graphic Design</h3>
-                <p class="lorem_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="footer_box3">
-                <img src="assets/Icon 3.png">
-                <h3>Motion Design</h3>
-                <p class="lorem_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </div>
+            <div id="success-message" class="success-message"></div>
+
+            <form id="contact-form" onsubmit="return validateForm()">
+                <div class="input-label error-flex">
+                    <input type="text" placeholder="Name" id="name" name="name">
+                    <div id="name-error" class="error-message"></div>
+                </div>
+
+                <div class="input-label">
+                    <input type="email" placeholder="Email" id="email" name="email">
+                    <div id="email-error" class="error-message"></div>
+                </div>
+                <div class="input-label">
+                    <input type="text" placeholder="Contact Number" id="contact-number" name="contact-number">
+                    <div id="contact-error" class="error-message"></div>
+                </div>
+
+                <div class="input-label">
+                    <textarea id="message" placeholder="Message" name="message"></textarea>
+                    <div id="message-error" class="error-message"></div>
+                </div>
+
+                <button type="submit">Send message</button>
+            </form>
         </div>
-    </div>
     </div>
 </body>
+
 </html>
